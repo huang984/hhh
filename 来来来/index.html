@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>星际战舰</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 主菜单 -->
+        <div id="main-menu" class="screen">
+            <h1>星际战舰</h1>
+            <nav>
+                <button data-screen="hangar">战舰库</button>
+                <button data-screen="missions">任务中心</button>
+                <button data-screen="shop">商店</button>
+                <button data-screen="upgrade">战舰升级</button>
+                <button data-screen="leaderboard">排行榜</button>
+            </nav>
+        </div>
+
+        <!-- 其他界面将通过 JavaScript 动态加载 -->
+        <div id="hangar" class="screen hidden"></div>
+        <div id="missions" class="screen hidden"></div>
+        <div id="shop" class="screen hidden"></div>
+        <div id="upgrade" class="screen hidden"></div>
+        <div id="leaderboard" class="screen hidden"></div>
+    </div>
+
+    <!-- 先加载数据文件 -->
+    <script src="js/data.js"></script>
+    <!-- 然后加载游戏主文件 -->
+    <script src="js/game.js"></script>
+</body>
+</html> 
